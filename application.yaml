@@ -1,0 +1,8 @@
+eureka:
+  client:
+    #Its a client so its true it will connect with server and register themself
+    fetch-registry: true
+    register-with-eureka: true
+    #it will connect with specific server so server address given here
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
